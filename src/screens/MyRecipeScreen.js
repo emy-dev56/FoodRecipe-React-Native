@@ -96,10 +96,10 @@ export default function MyRecipeScreen() {
                 <View
                   style={styles.actionButtonsContainer}
                   testID="editDeleteButtons">
-                    <TouchableOpacity onPress={()=>editrecipe(index)}>
+                    <TouchableOpacity onPress={()=>editrecipe(index)} style={styles.editButton}>
                       <Text style={styles.editButtonText}>Edit</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={()=>deleterecipe(index)}>
+                    <TouchableOpacity onPress={()=>deleterecipe(index)} style={styles.deleteButton}>
                       <Text style={styles.deleteButtonText}>Delete</Text>
                     </TouchableOpacity>
                   </View>
