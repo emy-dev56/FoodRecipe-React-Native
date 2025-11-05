@@ -16,7 +16,7 @@ const favoritesSlice = createSlice({
       if (existingIndex >= 0) {
         state.favoriterecipes.splice(existingIndex, 1);
       } else {
-        state.favoriterecipes.push(article);
+        state.favoriterecipes.push(recipe);
       }
     },
   },
